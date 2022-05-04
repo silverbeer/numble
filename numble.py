@@ -5,7 +5,7 @@ print("Welcome to the Numble Game")
 
 #  What is your name?
 player_name = input("What is your name? ")
-print(player_name)
+print(f"Hi {player_name}!  Welcome to Numble.")
 
 #  Min Number
 min = int(input("Min Number: "))
