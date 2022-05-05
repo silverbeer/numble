@@ -5,19 +5,19 @@ print("Welcome to the Numble Game")
 
 #  What is your name?
 player_name = input("What is your name? ")
-print(f"Hi {player_name}!  Welcome to Numble.")
+print(f"Hi!  Welcome to Numble.")
 
 #  Min Number
 min = int(input("Min Number: "))
-print(min)
+#print(min)
 
 #  Max Number
 max = int(input("Max Number: "))
-print(max)
+#print(max)
 
 #  Max number of guesses
 number_of_guesses = int(input("Number of guesses: "))
-print(number_of_guesses)
+#print(number_of_guesses)
 
 #   Randomly select number
 secret_number = random.randint(min, max)
@@ -29,7 +29,6 @@ list_of_numbers = []
 while True:
 
     number_guessed = int(input("Guess a number: "))
-    print(number_guessed)
     guess_count += 1
     list_of_numbers.append(number_guessed)
 
@@ -43,8 +42,8 @@ while True:
         print("LOWER")
 
     if guess_count < number_of_guesses:
-        print(f"guess count = {guess_count}")
-        print(f"the list of guesses: {list_of_numbers}")
+        #print(f"guess count = {guess_count}")
+        #print(f"the list of guesses: {list_of_numbers}")
 
         continue
     else:
